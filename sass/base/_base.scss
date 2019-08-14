@@ -1,0 +1,37 @@
+/*:root {
+    --color-primary: #00b16a;
+    --color-primary-light: #66cc99;
+
+    --color-grey-light-1: #e8e8e8;
+
+    --color-grey-dark-1: #7c7c7c;
+    --color-grey-dark-2: #bdc3c7 ;
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
+    --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+    --line: 1px solid var(--color-grey-light-2);
+}*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // Valor de 1rem é definido aqui, usa-se 10px para ser mais fácil calcular tamanhos
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
+::selection {
+  //background-color: $color-primary;
+  //color: $color-white;
+}

@@ -1,0 +1,13 @@
+.header {
+    //background-color: var(--color-primary);
+    height: 80vh;
+    background-image: linear-gradient(to bottom right, rgba($color-primary, 0.8), rgba($color-primary-light, 0.8)), url(../img/zen-back.jpg);
+    //background-image: linear-gradient(to bottom right, rgba(red, 0.8), rgba($color-primary, 0.8));
+    display: flex;
+    align-items: center;
+
+    &__heading {
+        padding-left: 10rem;
+    }
+    
+}
