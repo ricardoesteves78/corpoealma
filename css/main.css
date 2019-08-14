@@ -106,3 +106,9 @@ body {
     padding-left: 5rem;
   }
 }
+
+@media screen and (max-width: 31.25em) {
+  .header__heading {
+    padding-left: 2.5rem;
+  }
+}
