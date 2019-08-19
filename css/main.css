@@ -145,6 +145,14 @@ body {
   color: #ffff;
 }
 
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [ini-lat-esq] minmax(6rem, 1fr) [fim-lat-esq ini-centro] ([col-start] minmax(min-content, 14rem) [col-end])[8] [fim-centro ini-lat-dir] minmax(6rem, 1fr) [fim-lat-dir];
+      grid-template-columns: [ini-lat-esq] minmax(6rem, 1fr) [fim-lat-esq ini-centro] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [fim-centro ini-lat-dir] minmax(6rem, 1fr) [fim-lat-dir];
+      grid-template-columns: [ini-lat-esq] minmax(6rem, 1fr) [fim-lat-esq ini-centro] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [fim-centro ini-lat-dir] minmax(6rem, 1fr) [fim-lat-dir];
+}
+
 body {
   font-family: 'Exo', sans-serif;
   font-weight: 400;
@@ -218,14 +226,14 @@ body {
 }
 
 .servicos {
+  grid-column: 1 / -1;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 7rem;
-  margin: 10rem 20rem;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  grid-gap: 7.5rem;
+  padding: 15rem;
+  background-color: #fdfdfd;
 }
 
 .servico {
@@ -239,6 +247,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: solid 1px #fdfdfd;
+  padding: 3rem;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 3px;
 }
 
 .servico__imagem {
@@ -263,6 +277,7 @@ body {
   background-image: linear-gradient(to bottom right, rgba(102, 204, 153, 0.8), rgba(0, 177, 106, 0.8)), url(../img/zen-back.jpg);
   background-size: cover;
   background-position: top;
+  grid-column: ini-lat-esq / fim-lat-dir;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
