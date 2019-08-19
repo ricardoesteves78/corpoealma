@@ -249,8 +249,8 @@ body {
           align-items: center;
   border: solid 1px #fdfdfd;
   padding: 3rem;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(102, 204, 153, 0.15);
-          box-shadow: 0 1.5rem 4rem rgba(102, 204, 153, 0.15);
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 177, 106, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 177, 106, 0.15);
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 3px;
 }
