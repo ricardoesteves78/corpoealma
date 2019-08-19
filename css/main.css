@@ -190,8 +190,8 @@ body {
   }
 }
 
-.heading-4 {
-  font-size: 1.4rem;
+.heading-3 {
+  font-size: 1.5rem;
   font-weight: 400;
   color: #7c7c7c;
   text-transform: uppercase;
@@ -220,8 +220,8 @@ body {
 .servicos {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;
   margin: 10rem 20rem;
   -ms-grid-column-align: center;
@@ -248,7 +248,7 @@ body {
 }
 
 .servico p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-align: center;
 }
 
