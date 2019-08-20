@@ -257,8 +257,10 @@ body {
           box-shadow: 0 1.5rem 4rem rgba(0, 177, 106, 0.15);
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 3px;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
 }
 
 .servico__imagem {
@@ -327,15 +329,20 @@ body {
   display: -ms-grid;
   display: grid;
   grid-column: ini-lat-esq / fim-lat-dir;
-  -ms-grid-columns: 50vw;
-      grid-template-columns: 50vw;
+  -ms-grid-columns: 45vw;
+      grid-template-columns: 45vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding: 15rem 0;
+  /*
+    @media screen  and (max-width: $bp-xsmall) {
+        grid-template-columns: 1fr;
+        padding: 5rem 0;
+    }*/
 }
 
-@media screen and (max-width: 28.12em) {
+@media screen and (max-width: 46.75em) {
   .localizacao {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
