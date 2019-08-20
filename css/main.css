@@ -330,24 +330,28 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 15rem 0;
-  /*iframe {
-        border: 1px solid #ffffff;
-        z-index: 9999;
-        padding: 15rem auto;
-    }*/
 }
 
-.map-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative;
-  height: 0;
-}
-
-.map-responsive iframe {
-  left: 0;
-  top: 0;
+.localizacao iframe {
   height: 100%;
-  width: 100%;
-  position: absolute;
+  width: auto;
+  border: 1px solid #ffffff;
+  z-index: 9999;
+  padding: 15rem auto;
 }
+
+/*.map-responsive{
+    overflow:hidden;
+    padding-bottom:75%;
+    position:relative;
+    height:0;
+}
+
+/*
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}*/
