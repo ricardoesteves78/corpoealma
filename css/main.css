@@ -319,10 +319,20 @@ body {
 
 .localizacao {
   background-color: #00b16a;
+  display: -ms-grid;
+  display: grid;
   grid-column: ini-lat-esq / fim-lat-dir;
+  -ms-grid-columns: min-content;
+      grid-template-columns: -webkit-min-content;
+      grid-template-columns: min-content;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15rem 0;
 }
 
 .localizacao iframe {
   border: 1px solid #ffffff;
   z-index: 9999;
+  padding: 15rem auto;
 }
