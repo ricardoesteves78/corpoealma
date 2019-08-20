@@ -151,6 +151,13 @@ body {
   -ms-grid-columns: [ini-lat-esq] minmax(6rem, 1fr) [fim-lat-esq ini-centro] ([col-start] minmax(min-content, 14rem) [col-end])[8] [fim-centro ini-lat-dir] minmax(6rem, 1fr) [fim-lat-dir];
       grid-template-columns: [ini-lat-esq] minmax(6rem, 1fr) [fim-lat-esq ini-centro] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [fim-centro ini-lat-dir] minmax(6rem, 1fr) [fim-lat-dir];
       grid-template-columns: [ini-lat-esq] minmax(6rem, 1fr) [fim-lat-esq ini-centro] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [fim-centro ini-lat-dir] minmax(6rem, 1fr) [fim-lat-dir];
+  -ms-grid-rows: 80vh min-content (min-content)[2];
+      grid-template-rows: 80vh -webkit-min-content repeat(2, -webkit-min-content);
+      grid-template-rows: 80vh min-content repeat(2, min-content);
+  /*@media screen  and (max-width: $bp-medium-small) {
+    //grid-template-columns: 40vw;
+    grid-template-rows: 80vh min-content 80vh min-content;
+  }*/
 }
 
 body {
@@ -339,8 +346,6 @@ body {
 
 @media screen and (max-width: 46.75em) {
   .localizacao {
-    -ms-grid-columns: 40vw;
-        grid-template-columns: 40vw;
     padding: 5rem 0;
   }
 }
