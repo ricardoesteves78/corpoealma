@@ -323,8 +323,8 @@ body {
   display: -ms-grid;
   display: grid;
   grid-column: ini-lat-esq / fim-lat-dir;
-  -ms-grid-columns: 50rem;
-      grid-template-columns: 50rem;
+  -ms-grid-columns: 40vw;
+      grid-template-columns: 40vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -340,9 +340,13 @@ body {
 
 .map-responsive {
   overflow: hidden;
-  padding-bottom: 56.25%;
+  padding-bottom: 75%;
   position: relative;
   height: 0;
+  background-color: #ffffff;
+  margin: 5rem;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.55);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.55);
 }
 
 .map-responsive iframe {
