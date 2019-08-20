@@ -217,6 +217,10 @@ body {
   margin-bottom: 8rem;
 }
 
+.u-margin-top-medium {
+  margin-top: 4rem;
+}
+
 .u-margin-top-big {
   margin-top: 8rem;
 }
@@ -323,8 +327,8 @@ body {
   display: -ms-grid;
   display: grid;
   grid-column: ini-lat-esq / fim-lat-dir;
-  -ms-grid-columns: 40vw;
-      grid-template-columns: 40vw;
+  -ms-grid-columns: 50vw;
+      grid-template-columns: 50vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -338,15 +342,19 @@ body {
     }*/
 }
 
+.localizacao__grupo {
+  display: block;
+  background-color: #ffffff;
+  padding: 5rem;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.55);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.55);
+}
+
 .map-responsive {
   overflow: hidden;
   padding-bottom: 75%;
   position: relative;
   height: 0;
-  background-color: #ffffff;
-  margin: 5rem;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.55);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.55);
 }
 
 .map-responsive iframe {
