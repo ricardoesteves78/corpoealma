@@ -318,7 +318,8 @@ body {
 }
 
 .localizacao {
-  background-color: #00b16a;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(102, 204, 153, 0.8)), to(rgba(0, 177, 106, 0.8)));
+  background-image: linear-gradient(to bottom right, rgba(102, 204, 153, 0.8), rgba(0, 177, 106, 0.8));
   display: -ms-grid;
   display: grid;
   grid-column: ini-lat-esq / fim-lat-dir;
