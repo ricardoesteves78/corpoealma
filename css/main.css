@@ -399,6 +399,7 @@ body {
 .localizacao__icon {
   height: 2rem;
   width: 2rem;
+  fill: #7c7c7c;
 }
 
 .map-responsive {
