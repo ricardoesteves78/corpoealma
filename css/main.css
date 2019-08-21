@@ -151,9 +151,9 @@ body {
   -ms-grid-columns: [ini-lat-esq] minmax(6rem, 1fr) [fim-lat-esq ini-centro] ([col-start] minmax(min-content, 14rem) [col-end])[8] [fim-centro ini-lat-dir] minmax(6rem, 1fr) [fim-lat-dir];
       grid-template-columns: [ini-lat-esq] minmax(6rem, 1fr) [fim-lat-esq ini-centro] repeat(8, [col-start] minmax(-webkit-min-content, 14rem) [col-end]) [fim-centro ini-lat-dir] minmax(6rem, 1fr) [fim-lat-dir];
       grid-template-columns: [ini-lat-esq] minmax(6rem, 1fr) [fim-lat-esq ini-centro] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [fim-centro ini-lat-dir] minmax(6rem, 1fr) [fim-lat-dir];
-  -ms-grid-rows: 80vh min-content (min-content)[2];
-      grid-template-rows: 80vh -webkit-min-content repeat(2, -webkit-min-content);
-      grid-template-rows: 80vh min-content repeat(2, min-content);
+  -ms-grid-rows: 80vh min-content min-content min-content;
+      grid-template-rows: 80vh -webkit-min-content -webkit-min-content -webkit-min-content;
+      grid-template-rows: 80vh min-content min-content min-content;
   /*@media screen  and (max-width: $bp-medium-small) {
     //grid-template-columns: 40vw;
     grid-template-rows: 80vh min-content 80vh min-content;
@@ -237,14 +237,16 @@ body {
 }
 
 .servicos {
-  grid-column: 1 / -1;
+  grid-column: ini-centro / fim-centro;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7.5rem;
-  padding: 15rem;
-  background-color: #fdfdfd;
+  padding: 15rem 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .servico {
@@ -291,6 +293,11 @@ body {
 .container {
   max-width: 114rem;
   margin: 0 auto;
+}
+
+.footer {
+  grid-column: ini-centro / fim-centro;
+  background-color: #fcf8f8;
 }
 
 .header {
